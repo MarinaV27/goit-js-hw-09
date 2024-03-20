@@ -17,14 +17,18 @@
     padding: 0;
     align-items: center;
   }
+
+  .gallery-image {
+    width: 360px;
+    height: 200px;
+}
   
   .gallery-item {
     list-style-type: none;
   }
   .gallery-image:hover,
   .gallery-image:focus{
-    width: 376px;
-    height: 208px;
+    transform: scale(1.04);
     transition: all 0.25s ease-in;
 }
  
