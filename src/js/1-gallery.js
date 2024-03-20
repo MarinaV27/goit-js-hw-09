@@ -63,7 +63,7 @@ const images = [
       description: 'Lighthouse Coast Sea',
      },
     ];
-    const container = document.querySelector(".gallery");
+    const container = document.querySelector("ul.gallery");
     const img = document.querySelectorAll(".galleri-link")
     container.innerHTML = creatMarkup(images);
     container.addEventListener("click", handleModalOpen);
@@ -85,6 +85,11 @@ const images = [
       )
       .join("");
   }
+  // Описаний в документації
+import SimpleLightbox from "simplelightbox";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 
     function handleModalOpen(event){
         if(event.currentTarget === event.target) return;
