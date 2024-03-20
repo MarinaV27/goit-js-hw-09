@@ -1,0 +1,32 @@
+
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #edf2f7;
+  }
+  
+  .gallery {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+    margin: auto;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .gallery-item {
+    list-style-type: none;
+  }
+  .gallery-image:hover,
+  .gallery-image:focus{
+    width: 376px;
+    height: 208px;
+    transition: all 0.25s ease-in;
+}
+ 
+  
+  
