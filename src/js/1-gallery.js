@@ -77,8 +77,8 @@ const images = [
            src="${preview}"
            data-source="${original}"
            alt="${description}"
-           width = 360 px
-           height = 200 px
+           width = '360' 
+           height = '200' 
          />
        </a>   
       </li>`
