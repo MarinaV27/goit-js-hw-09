@@ -1,2 +1,10 @@
 @import url('./1-gallery.css');
 @import url('./2-form.css');
+
+ a {display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+ }
