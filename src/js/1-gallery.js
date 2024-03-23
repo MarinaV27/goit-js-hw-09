@@ -25,9 +25,8 @@
       .join("");
   }
 
-  function handleModalOpen(event) {
-    event.preventDefault();
-    
+   function handleModalOpen(event) {
+    event.preventDefault(); 
   }
 
 

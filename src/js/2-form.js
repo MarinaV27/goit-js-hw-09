@@ -2,13 +2,14 @@ const LOCAL_KEY = 'feedback-form-state';
 const form = document.querySelector('.feedback-form');
 
 form.addEventListener('submit', onFormSubmit);
+form.addEventListener('input', onInputData);
 
 let dataForm = JSON.parse(localStorage.getItem(LOCAL_KEY)) || {};
 const { email, message } = form.elements;
 reloadPage();
 
 function onInputData(event) {
-  dataForm = { email: email.value, message: message.value };
+  dataForm = { email: email.value.trim(), message: message.value.trim()};
   localStorage.setItem(LOCAL_KEY, JSON.stringify(dataForm));
 }
 
@@ -21,7 +22,7 @@ function reloadPage() {
 
 function onFormSubmit(event) {
   event.preventDefault();
-  console.log({ email: email.value, message: message.value });
+  console.log({ email: email.value.trim(), message: message.value.trim() });
 
   if (email.value === '' || message.value === '') 
   return ;
@@ -33,3 +34,4 @@ function onFormSubmit(event) {
 
 
 
+  
