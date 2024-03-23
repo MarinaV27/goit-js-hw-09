@@ -7,10 +7,10 @@
 
     const container = document.querySelector("ul.gallery");
 
-    container.innerHTML = creatMarkup(images);
-
+    container.innerHTML = createMarkup(images);
+    const modal = new SimpleLightbox('.gallery  a', {  captionsData : "alt", captionDelay : 250  });
    
-    function creatMarkup (arr){
+    function createMarkup (arr){
       return arr.map(({preview, original, description}) => 
       `<li class="gallery-item">
       <a class="gallery-link" href="${original}">
@@ -25,12 +25,9 @@
       .join("");
   }
 
-
-  container.addEventListener("click", handleModalOpen);
-
   function handleModalOpen(event) {
     event.preventDefault();
-    const modal = new SimpleLightbox('.gallery  a', {  captionsData : "alt", captionDelay : 250  });
+    
   }
 
 
